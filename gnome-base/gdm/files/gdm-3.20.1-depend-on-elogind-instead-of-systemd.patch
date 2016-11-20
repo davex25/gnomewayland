@@ -1,0 +1,27 @@
+From 457ca2ed9f9bd6e267178138daf9dafc059f2b34 Mon Sep 17 00:00:00 2001
+From: David Friberg <dfriberg23@gmail.com>
+Date: Sat, 19 Nov 2016 11:08:40 -0600
+Subject: [PATCH 1/1] Depend on elogind instead of systemd
+
+---
+ configure.ac | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+index 714fb53..8c42b9e 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -872,8 +872,8 @@ dnl ---------------------------------------------------------------------------
+ dnl - Check for systemd support
+ dnl ---------------------------------------------------------------------------
+ 
+-PKG_CHECK_MODULES(SYSTEMD,
+-                  [libsystemd])
++PKG_CHECK_MODULES(ELOGIND,
++                  [libelogind])
+ 
+ AC_SUBST(SYSTEMD_CFLAGS)
+ AC_SUBST(SYSTEMD_LIBS)
+-- 
+2.10.2
+
