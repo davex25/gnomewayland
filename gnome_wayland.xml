@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <repositories encoding="UTF-8" version="1.1">
   <repo priority="100" quality="experimental">
-    <name>guitaraudio</name>
-    <description>Guitar-focused audio applications</description>
+    <name>gnome_wayland</name>
+    <description>Gnome wayland without systemd</description>
     <owner>
       <email>dfriberg23@gmail.com</email>
       <name>David Friberg</name>
     </owner>
-    <source type="git">https://github.com/davex25/guitaraudio.git</source>
+    <source type="git">https://github.com/davex25/gnomewayland.git</source>
   </repo>
 </repositories>
