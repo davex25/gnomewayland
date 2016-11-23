@@ -53,6 +53,7 @@ COMMON_DEPEND="
 		>=x11-base/xorg-server-1.14.3-r1
 		>=sys-auth/consolekit-0.4.5_p20120320-r2
 		!<sys-apps/openrc-0.12
+		wayland? ( >=sys-auth/elogind-2016 )
 	)
 	sys-auth/pambase[systemd?]
 

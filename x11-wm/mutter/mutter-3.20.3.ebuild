@@ -64,6 +64,7 @@ COMMON_DEPEND="
 		>=dev-libs/wayland-protocols-1.1
 		>=media-libs/clutter-1.20[wayland]
 		x11-base/xorg-server[wayland] )
+		>=sys-auth/elogind-2016
 "
 DEPEND="${COMMON_DEPEND}
 	>=dev-util/intltool-0.41
