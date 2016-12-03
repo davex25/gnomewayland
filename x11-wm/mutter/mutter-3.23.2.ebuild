@@ -28,7 +28,7 @@ COMMON_DEPEND="
 	>=media-libs/libcanberra-0.26[gtk3]
 	>=x11-libs/startup-notification-0.7
 	>=x11-libs/libXcomposite-0.2
-	>=gnome-base/gsettings-desktop-schemas-3.19.3[introspection?]
+	>=gnome-base/gsettings-desktop-schemas-3.21.4[introspection?]
 	gnome-base/gnome-desktop:3=
 	>sys-power/upower-0.99:=
 
