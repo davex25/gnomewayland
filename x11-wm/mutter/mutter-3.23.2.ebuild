@@ -94,6 +94,12 @@ src_prepare() {
   echo ">>> Replacing libsystemd with libelogind in configuration file ..."
   sed -i 's/libsystemd/libelogind/g' "${S}/configure.ac"
 
+  echo ">>> Fixing linux header include ..."
+  grep -lr "input-event-codes.h" --include \*.c | while read -r line ; do
+       echo " * ${S}/$line"
+       sed -i 's/include <linux\/input-event-codes.h/include <linux\/input.h/g' "${S}/$line" || die 'sed failed'
+  done
+
 	eautoreconf
 	gnome2_src_prepare
 }
