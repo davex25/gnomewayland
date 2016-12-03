@@ -30,6 +30,7 @@ COMMON_DEPEND="
 	>=x11-libs/libXcomposite-0.2
 	>=gnome-base/gsettings-desktop-schemas-3.21.4[introspection?]
 	gnome-base/gnome-desktop:3=
+  >=dev-util/gdbus-codegen-2.50
 	>sys-power/upower-0.99:=
 
 	x11-libs/libICE
